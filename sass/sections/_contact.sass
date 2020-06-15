@@ -1,0 +1,40 @@
+// =================================================================
+// contact styles
+#contact
+  background: #111
+  color: #FFF
+
+#contact
+  li
+    margin: 0
+
+    &:not(:last-of-type)
+      margin-bottom: 1.6rem
+
+  ul
+    display: inline-block
+    list-style: none
+    margin: 0
+    padding: 0
+
+    @media (hover: hover)
+      &:hover
+        a
+          opacity: 0.5
+
+    a
+      display: flex
+      align-items: center
+      transition: all .2s ease
+      color: var(--primaryColor)
+
+      &:hover
+        opacity: 1
+
+        @media (hover: hover)
+          svg
+            animation: pop .75s ease infinite
+
+      svg
+        display: inline-block
+        margin-right: .5em

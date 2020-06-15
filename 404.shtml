@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>404 - Malcolm Kiano | Web Designer & Developer</title>
+  <meta name="description" content="Malcolm Kiano is a freelance web designer & developer based in Boston, MA who is seriously into writing pretty code, crafting good UX and using accessibility best practices">
+
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+  <script src="https://kit.fontawesome.com/2790ddc3f5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/hfm2oco.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+  <style>
+
+  </style>
+
+  <nav>
+    <div class="wrapper">
+      <div id="logo">
+        <a href="/" class="lg-only">Malcolm Kiano</a>
+        <a href="/" class="sm-only">MK</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <header>
+      <div class="wrapper lost">
+        <article>
+          <span>404</span>
+          <h1>You lost?</h1>
+          <p>Looks like you tried to go somewhere that doesn't exist.</p>
+          <a class="btn btn-cta" href="/">Go Home</a>
+        </article>
+      </div>
+    </header>
+
+  </main>
+  
+</body>
+</html>

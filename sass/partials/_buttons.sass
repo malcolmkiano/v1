@@ -1,0 +1,47 @@
+// =================================================================
+// button styles 
+.btn
+  font-size: .8em
+  display: inline-block
+  margin-right: .5em
+  color: inherit
+  margin-bottom: .5em
+  padding: .5em 1em
+  text-transform: uppercase
+  position: relative
+  z-index: 5
+  overflow: hidden
+  border: .15em solid currentColor
+  font-weight: 900
+
+  &.btn-cta
+    border-color: var(--darkColor1)
+    background: var(--darkColor1)
+    color: var(--lightColor2)
+  
+  @media (hover: hover)
+    &::after
+      content: ""
+      position: absolute
+      font-size: inherit
+      top: 50%
+      left: 50%
+      height: 10em
+      width: 10em
+      background: currentColor
+      border-radius: 50%
+      opacity: 0
+      z-index: 1
+      transform: translate(-50%, -50%) scale(0)
+      pointer-events: none
+      transition: all .5s ease
+
+    &:hover
+      text-decoration: none
+
+      &::after
+        opacity: 0.2
+        transform: translate(-50%, -50%) scale(1)
+    
+    &:active::after
+      opacity: 0.4

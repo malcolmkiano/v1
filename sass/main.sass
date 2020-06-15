@@ -1,0 +1,174 @@
+@import 'partials/font'
+  
+// =================================================================
+// global styles
+*
+  box-sizing: border-box
+
+html
+  font-family: 'brandon-grotesque', sans-serif
+  font-size: 20px
+  font-display: swap
+
+  --defaultSpace: 1.8rem
+
+  --primaryColor: #FFD500
+  --secondaryColor: #FFE774
+  --darkColor1: #000000
+  --darkColor2: #242424
+  --darkColor3: #636363
+  --darkColor4: #B2B2B2
+  --lightColor1: #F7F7F7
+  --lightColor2: #FFFFFF
+  --linkColor: var(--darkColor2)
+
+
+::selection
+  background: var(--secondaryColor)
+  color: var(--darkColor1)
+
+body
+  margin: 0
+  padding: 0
+  overflow: hidden
+  background: var(--primaryColor)
+
+section
+  position: relative
+  overflow: hidden
+
+  h2
+    color: var(--darkColor3)
+    margin: 0 0 var(--defaultSpace)
+    user-select: none
+    z-index: -1
+
+svg
+  color: currentColor
+  fill: currentColor
+
+a
+  text-decoration: none
+  color: inherit
+
+  &:hover
+    text-decoration: underline
+
+@import 'partials/helpers'
+@import 'partials/loader'
+@import 'partials/nav'
+@import 'partials/buttons'
+@import 'partials/lost'
+@import 'partials/animations'
+
+@import 'sections/header'
+@import 'sections/work'
+@import 'sections/about'
+@import 'sections/contact'
+@import 'sections/footer'
+
+
+
+// =================================================================
+// responsive styles
+// tablets & lower
+.lg-only
+  display: none
+
+// larger than tablets
+@media screen and (min-width: 769px)
+  html
+    font-size: 24px
+
+  .lg-only
+    display: block
+
+  .sm-only
+    display: none
+  
+  .wrapper
+    width: 90%
+    max-width: 1600px
+  
+  .loaded #loader
+    .sm, .word:last-of-type
+      animation: none
+
+// laptops+
+@media screen and (min-width: 1024px)
+  header
+    font-size: 1.4rem
+
+  #work, #about
+    .heading-wrapper
+      position: absolute
+      display: inline-block
+
+    h2
+      color: var(--darkColor3)
+      transform-origin: left center
+      transform: rotate(-90deg) translate(-75%, 5vw)
+      font-size: 8rem
+      font-weight: 900
+      margin: 0
+      opacity: 0.5
+
+    .wrapper
+      padding: calc(var(--defaultSpace) * 3) var(--defaultSpace)
+    
+    article
+      width: 70vw
+      max-width: 1200px
+      margin: 0 auto calc(var(--defaultSpace) * 2)
+  
+  #work
+    article
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+
+      h3
+        margin-top: 0
+        font-size: 1.4rem
+        
+        &::after
+          content: ""
+          display: block
+          height: .25rem
+          width: 30%
+          margin-top: .5em
+          background: var(--primaryColor)
+
+      .screenshot
+        width: 50%
+        margin: 0
+        margin-right: 2rem
+        box-shadow: 0 1em var(--defaultSpace) rgba(0,0,0,0.35)
+  
+  #about
+    .heading-wrapper
+      top: 0
+      right: calc(var(--defaultSpace) * 2)
+
+    article
+      margin-bottom: 0
+
+    h2
+      right: var(--defaultSpace)
+      transform-origin: right center
+      transform: rotate(90deg) translate(75%, 5vw)
+  
+  #about, #contact
+    font-size: 1.3rem
+
+  #contact
+    text-align: center
+
+    li
+      display: inline-block
+      margin: 0 1em 1em
+
+// large desktops
+@media screen and (min-width: 1600px)
+  header
+    font-size: 1.6rem
