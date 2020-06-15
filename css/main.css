@@ -1,35 +1,40 @@
 @import url("https://p.typekit.net/p.css?s=1&k=hfm2oco&ht=tk&f=10294.10295.10296.10297.10304&a=19244116&app=typekit&e=css");
 @font-face {
   font-family: "brandon-grotesque";
-  src: url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff");
+  src: url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+    format("woff");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "brandon-grotesque";
-  src: url("https://use.typekit.net/af/32d3ee/0000000000000000000132e0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff");
+  src: url("https://use.typekit.net/af/32d3ee/0000000000000000000132e0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+    format("woff");
   font-display: swap;
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "brandon-grotesque";
-  src: url("https://use.typekit.net/af/8f4e31/0000000000000000000132e3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff");
+  src: url("https://use.typekit.net/af/8f4e31/0000000000000000000132e3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+    format("woff");
   font-display: swap;
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "brandon-grotesque";
-  src: url("https://use.typekit.net/af/383ab4/0000000000000000000132e4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff");
+  src: url("https://use.typekit.net/af/383ab4/0000000000000000000132e4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
+    format("woff");
   font-display: swap;
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "brandon-grotesque";
-  src: url("https://use.typekit.net/af/031bc7/0000000000000000000132e5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff");
+  src: url("https://use.typekit.net/af/031bc7/0000000000000000000132e5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+    format("woff");
   font-display: swap;
   font-style: normal;
   font-weight: 900;
@@ -43,14 +48,14 @@ html {
   font-size: 20px;
   font-display: swap;
   --defaultSpace: 1.8rem;
-  --primaryColor: #FFD500;
-  --secondaryColor: #FFE774;
+  --primaryColor: #ffd500;
+  --secondaryColor: #ffe774;
   --darkColor1: #000000;
   --darkColor2: #242424;
   --darkColor3: #636363;
-  --darkColor4: #B2B2B2;
-  --lightColor1: #F7F7F7;
-  --lightColor2: #FFFFFF;
+  --darkColor4: #b2b2b2;
+  --lightColor1: #f7f7f7;
+  --lightColor2: #ffffff;
   --linkColor: var(--darkColor2);
 }
 
@@ -74,8 +79,8 @@ section h2 {
   color: var(--darkColor3);
   margin: 0 0 var(--defaultSpace);
   -webkit-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   z-index: -1;
 }
 
@@ -265,7 +270,8 @@ nav .wrapper {
 }
 
 @keyframes pop {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -421,7 +427,7 @@ header .wrapper {
 
 #about {
   background: var(--darkColor2);
-  color: #FFF;
+  color: #fff;
 }
 #about article {
   position: relative;
@@ -448,7 +454,7 @@ header .wrapper {
 
 #contact {
   background: #111;
-  color: #FFF;
+  color: #fff;
 }
 
 #contact li {
@@ -532,7 +538,8 @@ footer .wrapper {
     max-width: 1600px;
   }
 
-  .loaded #loader .sm, .loaded #loader .word:last-of-type {
+  .loaded #loader .sm,
+  .loaded #loader .word:last-of-type {
     animation: none;
   }
 }
@@ -541,11 +548,13 @@ footer .wrapper {
     font-size: 1.4rem;
   }
 
-  #work .heading-wrapper, #about .heading-wrapper {
+  #work .heading-wrapper,
+  #about .heading-wrapper {
     position: absolute;
     display: inline-block;
   }
-  #work h2, #about h2 {
+  #work h2,
+  #about h2 {
     color: var(--darkColor3);
     transform-origin: left center;
     transform: rotate(-90deg) translate(-75%, 5vw);
@@ -554,10 +563,12 @@ footer .wrapper {
     margin: 0;
     opacity: 0.5;
   }
-  #work .wrapper, #about .wrapper {
+  #work .wrapper,
+  #about .wrapper {
     padding: calc(var(--defaultSpace) * 3) var(--defaultSpace);
   }
-  #work article, #about article {
+  #work article,
+  #about article {
     width: 70vw;
     max-width: 1200px;
     margin: 0 auto calc(var(--defaultSpace) * 2);
@@ -600,7 +611,8 @@ footer .wrapper {
     transform: rotate(90deg) translate(75%, 5vw);
   }
 
-  #about, #contact {
+  #about,
+  #contact {
     font-size: 1.3rem;
   }
 
