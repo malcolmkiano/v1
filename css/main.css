@@ -79,7 +79,6 @@ section h2 {
   color: var(--darkColor3);
   margin: 0 0 var(--defaultSpace);
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   z-index: -1;
 }
@@ -525,14 +524,6 @@ footer .wrapper {
     font-size: 24px;
   }
 
-  .lg-only {
-    display: block;
-  }
-
-  .sm-only {
-    display: none;
-  }
-
   .wrapper {
     width: 90%;
     max-width: 1600px;
@@ -546,6 +537,14 @@ footer .wrapper {
 @media screen and (min-width: 1024px) {
   header {
     font-size: 1.4rem;
+  }
+
+  .lg-only {
+    display: block;
+  }
+
+  .sm-only {
+    display: none;
   }
 
   #work .heading-wrapper,
