@@ -361,6 +361,7 @@ header p {
 header article {
   position: relative;
   z-index: 10;
+  background: linear-gradient(to right, var(--primaryColor) 78%, transparent);
 }
 header img {
   position: absolute;
